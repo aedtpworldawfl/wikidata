@@ -22,9 +22,9 @@
 <meta name="twitter:title" content="Human Q8 - AWFLWIKIDATAWORLD">
 <meta name="twitter:description" content="A bipedal primate mammal; a highly intelligent person created by God - AWFLWIKIDATAWORLD">
 <meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/4/43/Anterior_view_of_human_female_and_male%2C_with_labels.svg">
-<link rel="icon" href="https://aedtpworldawfl.github.io/wikidata/assets/wikiworld/logo/aedtpworld.svg">
-<link rel="apple-touch-icon" href="https://aedtpworldawfl.github.io/wikidata/assets/wikiworld/logo/aedtpworld.svg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AWFLWIKIDATAWORLD","logo":"https://aedtpworldawfl.github.io/wikidata/assets/wikiworld/logo/aedtpworld.svg","alternateName":"AEDTP WORLD FREE LICENSE (AWFL)","url":"https://aedtpworldawfl.github.io/wikidata","description":"A bipedal primate mammal; a highly intelligent person created by God - AWFLWIKIDATAWORLD","publisher":{"@type":"Organization","name":"AWFLWIKIDATAWORLD"},"sameAs":["https://aedtpworldawfl.github.io","https://youtube.com/@aedtpworld","https://www.crunchbase.com/organization/aedtpworld","https://soundbetter.com/profiles/636065-aedtp-world","https://www.f6s.com/aedtpworld"]}</script>
+<link rel="icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+<link rel="apple-touch-icon" href="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"AWFLWIKIDATAWORLD","logo":"https://aedtpworld.com/wikiworld/logo/aedtpworld.svg","alternateName":"AEDTP WORLD FREE LICENSE (AWFL)","url":"https://aedtpworldawfl.github.io/wikidata","description":"A bipedal primate mammal; a highly intelligent person created by God - AWFLWIKIDATAWORLD","publisher":{"@type":"Organization","name":"AWFLWIKIDATAWORLD"},"sameAs":["https://aedtpworldawfl.github.io","https://youtube.com/@aedtpworld","https://www.crunchbase.com/organization/aedtpworld","https://soundbetter.com/profiles/636065-aedtp-world","https://www.f6s.com/aedtpworld"]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Thing","@id":"https://aedtpworldawfl.github.io/wikidata/Q8.html","url":"https://aedtpworldawfl.github.io/wikidata/Q8.html","name":"Human","identifier":"Q8","description":"A bipedal primate mammal; a highly intelligent person created by God","alternateName":["Person","Mankind","Humanity","People"],"image":["https://upload.wikimedia.org/wikipedia/commons/4/43/Anterior_view_of_human_female_and_male%2C_with_labels.svg"],"sameAs":["https://aedtpworld.com/wikiworld/Human","https://www.wikidata.org/wiki/Q5","https://en.wikipedia.org/wiki/Human"]}</script>
 <style>*{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
@@ -147,9 +147,9 @@ footer{text-align:center;padding:20px 16px;color:#666;font-size:14px}
 <style>:root{--header:#ffffff;--headerText:#202122;--button:#0645ad;--buttonText:#ffffff;--wikiText:#202122;--links:#0645ad;}</style>
 </head><body>
 <header style="background:var(--header);color:var(--headerText)"><div class="wrap hdr">
-<a class="brand" href="https://aedtpworldawfl.github.io/wikidata/index.html"><img src="https://aedtpworldawfl.github.io/wikidata/assets/wikiworld/logo/aedtpworld.svg" height="32" width="32" alt="AWFLWIKIDATAWORLD"><span class="sitename">AWFLWIKIDATAWORLD</span></a>
-<form id="searchForm" action="https://aedtpworldawfl.github.io/wikidata/index.html" method="get"><input id="searchInput" name="q" placeholder="Search Wikidata..." autocomplete="off" aria-label="Search"></form>
-<nav><a href="https://aedtpworldawfl.github.io/wikidata/index.html">Home</a><a href="https://aedtpworldawfl.github.io/wikidata/index.html#all">Browse</a></nav>
+<a class="brand" href="https://aedtpworldawfl.github.io/wikidata/index.html"><img src="https://aedtpworld.com/wikiworld/logo/aedtpworld.svg" height="32" width="32" alt="AWFLWIKIDATAWORLD"><span class="sitename">AWFLWIKIDATAWORLD</span></a>
+<div id="searchForm" role="search"><input id="searchInput" type="search" placeholder="Search Wikidata..." autocomplete="off" aria-label="Search"></div>
+<nav><a href="https://aedtpworldawfl.github.io/wikidata/index.html">Home</a><a href="https://aedtpworldawfl.github.io/wikidata/index.html">Browse</a></nav>
 </div></header>
 <div class="wrap"><div id="searchResults"></div></div>
 <main class="wrap">
@@ -186,6 +186,7 @@ function row(e){
 }
 function html(list){return list.length?'<div class="results">'+list.map(row).join("")+'</div>':'<div class="no-results">No results</div>';}
 if(i&&r){
+  i.addEventListener("keydown",function(e){if(e.key==="Enter"){e.preventDefault();var q=this.value.trim();if(q)location.href="index.html?q="+encodeURIComponent(q);}});
   i.addEventListener("input",function(){
     clearTimeout(t);var q=this.value.trim();
     if(!q){r.innerHTML="";return;}
